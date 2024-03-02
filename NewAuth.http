@@ -1,0 +1,26 @@
+@api = http://localhost:5124
+@token = CfDJ8E67tSQa6LZDpDmYAygwz9PrYKI7ZKcuc65lfICVQsQUaQKSl-uOxtBrMLOJs2_SLn8OCoKBGzd7-A7fA889PQsxWpzhcXdTJUWuXol6SW17o2GrruhihdUc5y8eBuy7y5qRasmJgAqbNVgnqQOHz1IHGhW74fMiVuJMVRN29-vGaT3NHvxv1LZsjtKNOtT-l3kmcESs06MtENHubeQ83cgNeQHC6ojgrbirsQKdUI_CZMI7gFZq98QsEcyQWf0Nb_9wIJjyCdB-gmyl3cUX7LWYksaBMQZROFQITu9F_vAjoP1oSkhZs-ZRaCdbNr97hmWczB3D0sNatY11m3G8GNWMVxCU3_2N5Rqv3ecP6fvO3ybPYTKo0q2j4E7k6k5lFR7TKFbVGrf_sLKp9qz23zJMNP8IFEpG2fxSGNKa4ep8f0IK7vsPxqVHUudIphOQ0qVAF6ynCSN9ZbGVRPe2qMIjDHuSi-5u_0NBSg17x8tsKt6uHMj8tZwhhr8bcuCRGoQUcgjdFgM01Imj43L7yqN2mtkgM1Wf1XFQdVSjCyx9vAZvoQbecxP2Et3S3V5LWtaqr1glY7uLCn95uSzMXN0aw-QsgJF_o_xJJ6durCHYplLcFCnmlPjC1VQIh3XO9ZtbjuU5KCpAde8bc_QNjl8XD0R-0SQ-Pl5FZDz9ZoXrG1mabwME_1nppclnbD4QOg
+
+GET {{api}}/
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{api}}/register
+Content-Type: application/json
+
+{
+  "email": "dev21@gmail.com",
+  "password": "Dev1234!"
+}
+###
+
+POST {{api}}/login
+Content-Type: application/json
+
+{
+  "email": "dev21@gmail.com",
+  "password": "Dev1234!"
+}
+
+

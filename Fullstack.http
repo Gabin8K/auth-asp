@@ -1,0 +1,22 @@
+@api = http://localhost:5118
+@token = CfDJ8E67tSQa6LZDpDmYAygwz9OXRYBCMV7maz8hdEocFOByKVrQg6GUxKbg8srQRsW5bh2EiCnDoBbnfq7lrUMDDO9WhAKdJO5jSqw5txUjCt9v0apOZyN_By6G1daEao-jAXKHnX5QQVHfR3loMdpjGEfoUiXx5MRmdkbSl4FQi6EOM1CPpklFvbyH9BuFFQCtcjMiY_aI3PQWagXDSZMNyMBLF4-csaoZyw5tt2BwtG5vohTjlDOVZ7Fr5Ib4pBdQaPjG00cIOM0Ya7yVo5rxYVhC1Ot7TtC6_Ygfwap34H1yvN7QHO9Ro9UM7hVIFp2GokOxNUvETu8O5nzLqpQfNsXsZKs2ZUR6YfFLcn-werrsaJrXZHDBF7ftUlDHWJPhy-i7vnHaPSi0q5O-hjmgBj8HPS4YvL364V8EvYpOuuUBVpTPZb0vMJDzu3CXXYxTKFAGG20UqoD7Ua-8PRdbm50zvrxOSerTEQJ5H5aPrXfJG8aidJZG5dV4PdRWjQjGWRLMhwHiA9F55sodUV-1XaeVKlszQl8_Ujy7Ih1NbOnMFGKKlNT8km0aNTEXlRGZLnqMpdGr3byfY8Q3uqK8-XLhtC39dRHrkHAwAQ7ycd8jxBWW_DEx6LTG3b2nk2HN4dzXFOgpqaxVdoCnoNBxxrppWuaAtNdDuFCo0-_6C5bg9sdnwYQ0ejEJMNMvjr9-jQ
+
+POST {{api}}/login
+Content-Type: application/json
+
+{
+"email":"dev211@gmail.com",
+"password":"Dev1234!"
+}
+
+###
+
+GET {{api}}/api/Task
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+
+}
+
+###

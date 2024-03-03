@@ -3,8 +3,11 @@ using Fullstack.Data;
 using Fullstack.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddRazorPages();
 
 builder.Services.AddAuthentication();
 builder.Services.AddAuthentication();
@@ -33,9 +36,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
+app.MapRazorPages();
+
 app.MapControllers();
 app.UseHttpsRedirection();
-app.MapGet("/", (ClaimsPrincipal user) => $"{user.Identity?.Name}")
-    .RequireAuthorization();
 
 app.Run();

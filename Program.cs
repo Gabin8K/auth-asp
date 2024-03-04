@@ -1,9 +1,7 @@
-using System.Security.Claims;
 using Fullstack.Data;
 using Fullstack.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +35,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+app.UseRouting();
+app.MapFallbackToFile("client/index.html");
 app.MapRazorPages();
 
 app.MapControllers();
